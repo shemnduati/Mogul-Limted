@@ -15,6 +15,7 @@ class CreateDeliveryStatusTable extends Migration
     {
         Schema::create('delivery_status', function (Blueprint $table) {
             $table->id();
+            $table->string('status');
             $table->timestamps();
         });
     }

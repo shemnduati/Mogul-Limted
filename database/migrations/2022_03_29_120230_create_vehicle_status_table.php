@@ -15,6 +15,7 @@ class CreateVehicleStatusTable extends Migration
     {
         Schema::create('vehicle_status', function (Blueprint $table) {
             $table->id();
+            $table->string('status');
             $table->timestamps();
         });
     }
